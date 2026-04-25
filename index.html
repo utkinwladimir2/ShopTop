@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Social Mall — социальная сеть-витрина реферальных подборок в стиле виртуального торгового центра."
+    />
+    <title>Social Mall</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#/">
+        <span class="brand-icon">SM</span>
+        <span>Social Mall</span>
+      </a>
+
+      <label class="top-search">
+        <span>⌕</span>
+        <input id="globalSearch" placeholder="Поиск витрин и товаров..." autocomplete="off" />
+      </label>
+
+      <nav class="desktop-nav" aria-label="Главное меню">
+        <a href="#/" data-nav="/">Главная</a>
+        <a href="#/mall" data-nav="/mall">ТЦ</a>
+        <a href="#/dashboard" data-nav="/dashboard">Кабинет</a>
+        <a href="#/setup" data-nav="/setup">Моя витрина</a>
+        <a href="#/collection" data-nav="/collection">Коллекция</a>
+        <a href="#/editor" data-nav="/editor">Редактор</a>
+        <a href="#/earnings" data-nav="/earnings">Заработок</a>
+      </nav>
+
+      <div class="user-pill">
+        <span class="coin-dot">●</span>
+        <span id="coinBalance">0</span>
+      </div>
+    </header>
+
+    <main id="app" class="app-shell"></main>
+
+    <nav class="mobile-nav" aria-label="Мобильное меню">
+      <a href="#/" data-nav="/">⌂</a>
+      <a href="#/mall" data-nav="/mall">▦</a>
+      <a href="#/dashboard" data-nav="/dashboard">◈</a>
+      <a href="#/setup" data-nav="/setup">◇</a>
+      <a href="#/collection" data-nav="/collection">□</a>
+      <a href="#/editor" data-nav="/editor">✦</a>
+    </nav>
+
+    <script src="./site-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
